@@ -19,7 +19,9 @@
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server",
     "storybook": "start-storybook -p 9000",
-    "build-storybook": "build-storybook -c .storybook"
+    "build-storybook": "build-storybook -c .storybook",
+    "commitizen": "commitizen",
+    "commit": "git-cz"
   },
   "dependencies": {
     "classnames": "^2.2.6",
@@ -39,6 +41,8 @@
     "@storybook/addon-info": "^5.3.13",
     "@storybook/react": "^5.3.13",
     "babel-loader": "^8.0.6",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "3.1.0",
     "flow-bin": "^0.118.0",
     "nwb": "0.23.x",
     "react": "^16.12.0",
@@ -50,5 +54,10 @@
   "repository": "",
   "keywords": [
     "react-component"
-  ]
+  ],
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
 }
