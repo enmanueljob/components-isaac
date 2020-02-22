@@ -21,7 +21,8 @@
     "storybook": "start-storybook -p 9000",
     "build-storybook": "build-storybook -c .storybook",
     "commitizen": "commitizen",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "publish": "npm run build && semantic-release"
   },
   "dependencies": {
     "classnames": "^2.2.6",
@@ -38,6 +39,8 @@
     "@babel/core": "^7.8.4",
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
+    "@semantic-release/changelog": "^5.0.0",
+    "@semantic-release/git": "^9.0.0",
     "@storybook/addon-actions": "^5.3.13",
     "@storybook/addon-docs": "^5.3.13",
     "@storybook/addon-info": "^5.3.13",
@@ -49,7 +52,8 @@
     "husky": "^4.2.3",
     "nwb": "0.23.x",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "semantic-release": "^17.0.4"
   },
   "author": "",
   "homepage": "",
