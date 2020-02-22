@@ -24,8 +24,4 @@ export const mediumButton = () => (
   </Button>
 )
 
-export const underlineButton = () => (
-  <Button onClick={action("button-click")} size="medium" underline>
-    Click aquí
-  </Button>
-)
+
